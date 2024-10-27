@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Game Suggestor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Game Suggestor for Toddlers</h1>
+        <p>Find fun, easy games with everyday items you already have!</p>
+    </header>
+    <main>
+        <section class="question-section">
+            <h2>What items do you have at home?</h2>
+            <form id="itemForm">
+                <label><input type="checkbox" name="items" value="paper"> Paper</label>
+                <label><input type="checkbox" name="items" value="crayons"> Crayons</label>
+                <label><input type="checkbox" name="items" value="pillows"> Pillows</label>
+                <label><input type="checkbox" name="items" value="cardboard"> Cardboard Box</label>
+                <label><input type="checkbox" name="items" value="plastic-bottles"> Plastic Bottles</label>
+                <button type="button" onclick="suggestGames()">Suggest Games</button>
+            </form>
+        </section>
+        <section id="resultSection" class="result-section hidden">
+            <h2>Game Ideas</h2>
+            <div id="gameSuggestions"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
